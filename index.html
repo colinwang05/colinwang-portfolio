@@ -1,79 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colin Wang - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colin Wang - Portfolio</title>
+  <!-- Google Fonts for a modern look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Colin Wang</h1>
-        <p>Computer Science | Turing Scholars | UT Austin</p>
-        <nav>
-            <ul>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="header-container">
+      <h1>Colin Wang</h1>
+      <p class="tagline">Computer Science | Turing Scholars | UT Austin</p>
+      <nav>
+        <ul>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>The University of Texas at Austin</strong> (May 2027)</p>
-        <p><em>B.S. in Computer Science, Turing Scholars Honor Program</em></p>
-        <p>Relevant Coursework: Computer Architecture, Data Structures, Discrete Math, Linear Algebra, Number Theory</p>
+  <main>
+    <section id="education" class="card-section">
+      <h2>Education</h2>
+      <div class="content">
+        <h3>The University of Texas at Austin</h3>
+        <p class="date">(May 2027)</p>
+        <p class="degree">B.S. in Computer Science, Turing Scholars Honor Program</p>
+        <p class="coursework">Relevant Coursework: Computer Architecture, Data Structures, Discrete Math, Linear Algebra, Number Theory</p>
+      </div>
     </section>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
+    <section id="skills" class="card-section">
+      <h2>Technical Skills</h2>
+      <div class="content">
         <p><strong>Languages:</strong> Java, Python, C, Assembly (x86, ARM), C++, JavaScript, HTML, SQL</p>
         <p><strong>Tools/Frameworks:</strong> React.js, Angular.js, scikit-learn, Matplotlib, Transformers, TensorFlow, Pandas, NLTK, Git</p>
+      </div>
     </section>
 
-    <section id="research">
-        <h2>Research Experience</h2>
-        <h3>University of Maryland, College Park</h3>
-        <p>Fine-tuned LLaMA and Bloom LLMs, analyzing demographic bias using Transformers and NLTK.</p>
-        <p>Published in <a href="https://arxiv.org/abs/2406.10486" target="_blank">ACL 2024</a>.</p>
-        
-        <h3>Independent Research</h3>
-        <p>Developed sentiment analysis models using SVM, Neural Networks, and Random Forests.</p>
-        <p>Published in <a href="https://www.atlantis-press.com/proceedings/iciaai-23/125994591" target="_blank">ICIAAI 2023</a>.</p>
+    <section id="research" class="card-section">
+      <h2>Research Experience</h2>
+      <div class="content">
+        <article class="experience">
+          <h3>University of Maryland, College Park</h3>
+          <p>Fine-tuned LLaMA and Bloom LLMs, analyzing demographic bias using Transformers and NLTK.</p>
+          <p>Published in <a href="https://arxiv.org/abs/2406.10486" target="_blank">ACL 2024</a>.</p>
+        </article>
+        <article class="experience">
+          <h3>Independent Research</h3>
+          <p>Developed sentiment analysis models using SVM, Neural Networks, and Random Forests.</p>
+          <p>Published in <a href="https://www.atlantis-press.com/proceedings/iciaai-23/125994591" target="_blank">ICIAAI 2023</a>.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <h3>Wikipedia Scraper and Crawler (Node.js & React)</h3>
-        <p>Built a full-stack web scraper that recursively crawls Wikipedia pages until reaching “Philosophy.”</p>
-        <p>GitHub Repo: <a href="https://github.com/colinwang05/getting-to-philosophy" target="_blank">View on GitHub</a></p>
-
-        <h3>Web Crawler and Search Engine (Java)</h3>
-        <p>Implemented a web crawler using AttoParser to parse over 20,000 HTML pages and created an index of mappings for efficient querying.</p>
-        <p>Built a query engine using a recursive descent parser to process complex logical queries and exact phrase matching through parse tree construction and traversal.</p>
-
-        <h3>Tetris AI (Java, Neural Networks, Genetic Algorithms)</h3>
-        <p>Developed a neural network model for Tetris piece placement optimization using backpropagation.</p>
-        <p>Implemented genetic algorithms to evaluate and optimize game performance.</p>
-        
-        <h3>Email Spam Filter (Python, scikit-learn, pandas, NLTK)</h3>
-        <p>Built an email spam classifier using Naive Bayes and CountVectorizer, achieving 96% accuracy.</p>
-        <p>Optimized feature extraction and model parameters for enhanced performance.</p>
-        
-       
+    <section id="projects" class="card-section">
+      <h2>Projects</h2>
+      <div class="content">
+        <article class="project">
+          <h3>Wikipedia Scraper and Crawler (Node.js & React)</h3>
+          <p>Built a full-stack web scraper that recursively crawls Wikipedia pages until reaching “Philosophy.”</p>
+          <p>GitHub Repo: <a href="https://github.com/colinwang05/getting-to-philosophy" target="_blank">View on GitHub</a></p>
+        </article>
+        <article class="project">
+          <h3>Web Crawler and Search Engine (Java)</h3>
+          <p>Implemented a web crawler using AttoParser to parse over 20,000 HTML pages and created an index for efficient querying.</p>
+          <p>Developed a query engine using a recursive descent parser for processing complex queries and exact phrase matching.</p>
+        </article>
+        <article class="project">
+          <h3>Tetris AI (Java, Neural Networks, Genetic Algorithms)</h3>
+          <p>Developed a neural network model for optimizing Tetris piece placements using backpropagation.</p>
+          <p>Implemented genetic algorithms to evaluate and enhance game performance.</p>
+        </article>
+        <article class="project">
+          <h3>Email Spam Filter (Python, scikit-learn, pandas, NLTK)</h3>
+          <p>Built an email spam classifier using Naive Bayes and CountVectorizer, achieving 96% accuracy.</p>
+          <p>Optimized feature extraction and model parameters for improved performance.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="contact" class="card-section">
+      <h2>Contact</h2>
+      <div class="content">
         <p>Email: <a href="mailto:colinwang05@utexas.edu">colinwang05@utexas.edu</a></p>
         <p>GitHub: <a href="https://github.com/colinwang05" target="_blank">github.com/colinwang05</a></p>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Colin Wang</p>
-    </footer>
+  <footer>
+    <p>© 2025 Colin Wang</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
