@@ -14,12 +14,19 @@
       <h1>Colin Wang</h1>
       <p class="tagline">Computer Science | Turing Scholars | UT Austin</p>
       <nav>
-        <ul>
+        <ul>          
+
           <li><a href="#education">Education</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li>
+          <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=3S4ySr8AAAAJ" target="_blank">
+            Google Scholar
+          </a>
+          </li>
           <li><a href="#contact">Contact</a></li>
+
         </ul>
       </nav>
     </div>
@@ -32,7 +39,7 @@
         <h3>The University of Texas at Austin</h3>
         <p class="date">(May 2027)</p>
         <p class="degree">B.S. in Computer Science, Turing Scholars Honor Program</p>
-        <p class="coursework">Relevant Coursework: Computer Architecture, Data Structures, Discrete Math, Linear Algebra, Number Theory</p>
+        <p class="coursework">Relevant Coursework: Operating Systems, Computer Architecture, Data Structures, Discrete Math, Linear Algebra, Number Theory</p>
       </div>
     </section>
 
@@ -45,19 +52,19 @@
     </section>
 
     <section id="experience" class="card-section">
-    <h2>Experience</h2>
-    <div class="content">
-    <article class="experience">
-    <h3>IBM — Software Developer Intern (IBM Training)</h3>
-    <p class="date">May 2025 – Aug. 2025 · Austin, TX</p>
-    <ul>
-    <li>Built an AI chatbot for IBM Training using Watsonx Orchestrate and Watson Assistant; integrated authentication and personalized queries for tailored learning.</li>
-    <li>Designed and implemented REST APIs with Node.js/Express and DB2 SQL for user recognition, subscription retrieval, and course metadata access.</li>
-    <li>Developed a two-tower recommendation engine in PyTorch that embeds user job-role histories and course features into a shared vector space.</li>
-    <li>Integrated services with a React front end and leveraged IBM Cloud services; added logging/metrics and health checks for reliability.</li>
-    </ul>
-    </article>
-    </div>
+      <h2>Experience</h2>
+      <div class="content">
+        <article class="experience">
+          <h3>IBM — Software Developer Intern (IBM Training)</h3>
+          <p class="date">May 2025 – Aug. 2025 · Austin, TX</p>
+          <ul>
+            <li>Built an AI chatbot for IBM Training using Watsonx Orchestrate and Watson Assistant; integrated authentication and personalized queries for tailored learning.</li>
+            <li>Designed and implemented REST APIs with Node.js/Express and DB2 SQL for user recognition, subscription retrieval, and course metadata access.</li>
+            <li>Developed a two-tower recommendation engine in PyTorch that embeds user job-role histories and course features into a shared vector space.</li>
+            <li>Integrated services with a React front end and leveraged IBM Cloud services; added logging/metrics and health checks for reliability.</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section id="research" class="card-section">
@@ -66,12 +73,12 @@
         <article class="experience">
           <h3>University of Maryland, College Park</h3>
           <p>Fine-tuned LLaMA and Bloom LLMs, analyzing demographic bias using Transformers and NLTK.</p>
-          <p>Published in <a href="https://arxiv.org/abs/2406.10486" target="_blank">ACL 2024</a>.</p>
+          <p>Published in <a href="https://arxiv.org/abs/2406.10486" target="_blank" rel="noopener">ACL 2024</a>.</p>
         </article>
         <article class="experience">
           <h3>Independent Research</h3>
           <p>Developed sentiment analysis models using SVM, Neural Networks, and Random Forests.</p>
-          <p>Published in <a href="https://www.atlantis-press.com/proceedings/iciaai-23/125994591" target="_blank">ICIAAI 2023</a>.</p>
+          <p>Published in <a href="https://www.atlantis-press.com/proceedings/iciaai-23/125994591" target="_blank" rel="noopener">ICIAAI 2023</a>.</p>
         </article>
       </div>
     </section>
@@ -80,25 +87,29 @@
       <h2>Projects</h2>
       <div class="content">
         <article class="project">
-          <h3>OS Kernel — Cooperative Multithreading & Synchronization (C/C++, x86, SMP)</h3>
-          <p>Implemented cooperative multithreading with per-thread stacks, thread control blocks, context-switch trampolines, and a multi-core yield-based scheduler using per-core ready queues.</p>
+          <h3>OS Kernel — Preemptive Multithreading & Synchronization (C/C++, x86, SMP)</h3>
+          <p>Implemented preemptive multithreading with per-thread stacks, thread control blocks, context-switch trampolines, and a multi-core <strong>timer-interrupt–driven</strong> scheduler using per-core ready queues and idle threads.</p>
           <p>Built blocking synchronization primitives (Locks, Semaphores, Promises, Barriers) and validated correctness under race conditions and multi-core concurrency.</p>
-          </article>
+        </article>
+
         <article class="project">
           <h3>Wikipedia Scraper and Crawler (Node.js & React)</h3>
           <p>Built a full-stack web scraper that recursively crawls Wikipedia pages until reaching “Philosophy.”</p>
-          <p>GitHub Repo: <a href="https://github.com/colinwang05/getting-to-philosophy" target="_blank">View on GitHub</a></p>
+          <p>GitHub Repo: <a href="https://github.com/colinwang05/getting-to-philosophy" target="_blank" rel="noopener">View on GitHub</a></p>
         </article>
+
         <article class="project">
           <h3>Web Crawler and Search Engine (Java)</h3>
           <p>Implemented a web crawler using AttoParser to parse over 20,000 HTML pages and created an index for efficient querying.</p>
           <p>Developed a query engine using a recursive descent parser for processing complex queries and exact phrase matching.</p>
         </article>
+
         <article class="project">
           <h3>Tetris AI (Java, Neural Networks, Genetic Algorithms)</h3>
           <p>Developed a neural network model for optimizing Tetris piece placements using backpropagation.</p>
           <p>Implemented genetic algorithms to evaluate and enhance game performance.</p>
         </article>
+
         <article class="project">
           <h3>Email Spam Filter (Python, scikit-learn, pandas, NLTK)</h3>
           <p>Built an email spam classifier using Naive Bayes and CountVectorizer, achieving 96% accuracy.</p>
@@ -111,7 +122,7 @@
       <h2>Contact</h2>
       <div class="content">
         <p>Email: <a href="mailto:colinwang05@utexas.edu">colinwang05@utexas.edu</a></p>
-        <p>GitHub: <a href="https://github.com/colinwang05" target="_blank">github.com/colinwang05</a></p>
+        <p>GitHub: <a href="https://github.com/colinwang05" target="_blank" rel="noopener">github.com/colinwang05</a></p>
       </div>
     </section>
   </main>

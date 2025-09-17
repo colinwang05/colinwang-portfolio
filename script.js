@@ -1,12 +1,13 @@
+// script.js
 document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("nav ul li a");
-  
-    links.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-        document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
-      });
+  // only internal anchors like #education, #skills, etc.
+  const links = document.querySelectorAll('nav ul li a[href^="#"]');
+
+  links.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) target.scrollIntoView({ behavior: "smooth" });
     });
   });
-  
+});
