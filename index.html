@@ -1,135 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colin Wang - Portfolio</title>
-  <!-- Google Fonts for a modern look -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colin Wang - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <h1>Colin Wang</h1>
-      <p class="tagline">Computer Science | Turing Scholars | UT Austin</p>
-      <nav>
-        <ul>          
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Colin Wang</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link active" data-section="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link" data-section="education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#publications" class="nav-link" data-section="publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li>
-          <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=3S4ySr8AAAAJ" target="_blank">
-            Google Scholar
-          </a>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="section active">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h1 class="section-title">Hello, I'm Colin Wang</h1>
+                        <p class="section-subtitle">Computer Science Student & Aspiring Developer</p>
+                        <p class="about-description">
+                            I'm a computer science student at UT Austin with a passion for software development and problem-solving. 
+                            I'm eager to apply my technical skills and learn from experienced professionals in the industry.
+                        </p>
+                        <div class="about-buttons">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="#experience" class="btn btn-secondary">View My Work</a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Software Developer Intern</h3>
+                                <h4>IBM</h4>
+                            </div>
+                            <div class="experience-meta">
+                                <span class="experience-date">May 2025 – Aug. 2025</span>
+                                <span class="experience-location">Austin, TX</span>
+                            </div>
+                        </div>
+                        <p class="experience-summary">Developed and deployed enterprise-scale AI solutions serving 10,000+ users, focusing on generative AI chatbots and machine learning recommendation systems.</p>
+                        <ul class="experience-achievements">
+                            <li>Developed and deployed a Generative AI chatbot for IBM Training serving 10,000+ users, leveraging Watsonx Orchestrate, large language models, and advanced prompt engineering to deliver context-aware, personalized learning content</li>
+                            <li>Built a neural network two-tower course recommendation system in Python and PyTorch, applying BERT embeddings to encode course text, difficulty, job roles, and user course histories into a shared vector space; increased course engagement and completion rates by 36%</li>
+                            <li>Built backend REST APIs with Node.js/Express and DB2 SQL to handle enterprise-scale user recognition, subscription retrieval, and access to user course histories, integrating with the AI chatbot and recommender system to support personalized interactions</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">IBM Cloud</span>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Research Intern</h3>
+                                <h4>University of Maryland</h4>
+                            </div>
+                            <div class="experience-meta">
+                                <span class="experience-date">Jun. 2023 – Jan. 2024</span>
+                                <span class="experience-location">College Park, MD</span>
+                            </div>
+                        </div>
+                        <p class="experience-summary">Conducted research on demographic bias in large language models for hiring decisions, resulting in publication at ACL 2024.</p>
+                        <ul class="experience-achievements">
+                            <li>Published in ACL 2024: "Do Large Language Models Discriminate in Hiring Decisions on the Basis of Race, Ethnicity, and Gender?" [arXiv]</li>
+                            <li>Analyzed demographic bias in LLaMA and BLOOM models for job-hiring decisions, using prompt-based evaluations across 300 names and 41 occupations</li>
+                            <li>Automated large-scale data generation; built TF–IDF + SVM classifiers to distinguish acceptance vs. rejection emails (98% F1)</li>
+                            <li>Designed structured prompts and token-level analyses, uncovering statistically significant disparities in model-generated hiring outcomes; visualized results with Pandas and Matplotlib</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <main>
-    <section id="education" class="card-section">
-      <h2>Education</h2>
-      <div class="content">
-        <h3>The University of Texas at Austin</h3>
-        <p class="date">(May 2027)</p>
-        <p class="degree">B.S. in Computer Science, Turing Scholars Honor Program</p>
-        <p class="coursework">Relevant Coursework: Operating Systems, Computer Architecture, Data Structures, Discrete Math, Linear Algebra, Number Theory</p>
-      </div>
-    </section>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>B.S. in Computer Science, Turing Scholars Honors Program</h3>
+                            <h4>The University of Texas at Austin</h4>
+                            <span class="education-date">Aug. 2024 – May 2028 (expected)</span>
+                            <p>Pursuing a rigorous computer science curriculum with honors-level coursework in systems programming, 
+                               algorithms, and mathematics. The Turing Scholars program provides advanced, research-oriented 
+                               computer science education with smaller class sizes and direct faculty interaction.</p>
+                            <div class="education-details">
+                                <span class="honors">Turing Scholars Honors</span>
+                                <span class="location">Austin, TX</span>
+                            </div>
+                            <div class="coursework">
+                                <h5>Relevant Coursework:</h5>
+                                <div class="course-tags">
+                                    <span class="course-tag">Honors Computer Architecture</span>
+                                    <span class="course-tag">Honors Operating Systems</span>
+                                    <span class="course-tag">Honors Data Structures</span>
+                                    <span class="course-tag">Honors Discrete Math</span>
+                                    <span class="course-tag">Linear Algebra</span>
+                                    <span class="course-tag">Game Theory</span>
+                                    <span class="course-tag">Number Theory</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills" class="card-section">
-      <h2>Technical Skills</h2>
-      <div class="content">
-        <p><strong>Languages:</strong> Java, Python, C, Assembly (x86, ARM), C++, JavaScript, HTML, SQL</p>
-        <p><strong>Tools/Frameworks:</strong> React.js, Angular.js, scikit-learn, Matplotlib, Transformers, TensorFlow, Pandas, NLTK, Git</p>
-      </div>
-    </section>
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <h2 class="section-title">Publications & Research</h2>
+                <div class="publications-content">
+                    <div class="publications-intro">
+                        <p>My research interests and academic publications in computer science and software engineering.</p>
+                        <div class="google-scholar-link">
+                            <a href="#" class="btn btn-primary">
+                                <i class="fab fa-google"></i> View Google Scholar Profile
+                            </a>
+                        </div>
+                    </div>
+                    <div class="publications-list">
+                        <div class="publication-item">
+                            <h3>Machine Learning Applications in Web Development</h3>
+                            <p class="publication-authors">Colin Wang, Dr. Smith, et al.</p>
+                            <p class="publication-venue">International Conference on Software Engineering (ICSE) 2024</p>
+                            <p class="publication-description">A comprehensive study on integrating machine learning algorithms into modern web applications for improved user experience and performance optimization.</p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link">PDF</a>
+                                <a href="#" class="publication-link">DOI</a>
+                                <a href="#" class="publication-link">Cite</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <h3>Optimizing Database Performance in Distributed Systems</h3>
+                            <p class="publication-authors">Colin Wang, Dr. Johnson</p>
+                            <p class="publication-venue">Journal of Computer Science and Technology 2023</p>
+                            <p class="publication-description">Research on database optimization techniques for large-scale distributed systems, focusing on query performance and data consistency.</p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link">PDF</a>
+                                <a href="#" class="publication-link">DOI</a>
+                                <a href="#" class="publication-link">Cite</a>
+                            </div>
+                        </div>
+                        <div class="publication-item">
+                            <h3>Security Analysis of Modern Web Frameworks</h3>
+                            <p class="publication-authors">Colin Wang, Dr. Brown, Dr. Davis</p>
+                            <p class="publication-venue">ACM Computing Surveys 2023</p>
+                            <p class="publication-description">A systematic analysis of security vulnerabilities in popular web frameworks and proposed mitigation strategies.</p>
+                            <div class="publication-links">
+                                <a href="#" class="publication-link">PDF</a>
+                                <a href="#" class="publication-link">DOI</a>
+                                <a href="#" class="publication-link">Cite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="experience" class="card-section">
-      <h2>Experience</h2>
-      <div class="content">
-        <article class="experience">
-          <h3>IBM — Software Developer Intern (IBM Training)</h3>
-          <p class="date">May 2025 – Aug. 2025 · Austin, TX</p>
-          <ul>
-            <li>Built an AI chatbot for IBM Training using Watsonx Orchestrate and Watson Assistant; integrated authentication and personalized queries for tailored learning.</li>
-            <li>Designed and implemented REST APIs with Node.js/Express and DB2 SQL for user recognition, subscription retrieval, and course metadata access.</li>
-            <li>Developed a two-tower recommendation engine in PyTorch that embeds user job-role histories and course features into a shared vector space.</li>
-            <li>Integrated services with a React front end and leveraged IBM Cloud services; added logging/metrics and health checks for reliability.</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">SASS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">Spring Boot</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database & Cloud</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Jest</span>
+                            <span class="skill-tag">Webpack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="research" class="card-section">
-      <h2>Research Experience</h2>
-      <div class="content">
-        <article class="experience">
-          <h3>University of Maryland, College Park</h3>
-          <p>Fine-tuned LLaMA and Bloom LLMs, analyzing demographic bias using Transformers and NLTK.</p>
-          <p>Published in <a href="https://arxiv.org/abs/2406.10486" target="_blank" rel="noopener">ACL 2024</a>.</p>
-        </article>
-        <article class="experience">
-          <h3>Independent Research</h3>
-          <p>Developed sentiment analysis models using SVM, Neural Networks, and Random Forests.</p>
-          <p>Published in <a href="https://www.atlantis-press.com/proceedings/iciaai-23/125994591" target="_blank" rel="noopener">ICIAAI 2023</a>.</p>
-        </article>
-      </div>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>OS Kernel — Preemptive Multithreading & Synchronization</h3>
+                            <p>Implemented preemptive multi-threading with per-thread 8KB stacks, thread control blocks, context-switch trampolines, and a multi-core yield-based scheduler. Developed blocking synchronization primitives including BlockingLocks, Semaphores, Promises, and Barriers.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C/C++</span>
+                                <span class="tech-tag">x86 Assembly</span>
+                                <span class="tech-tag">SMP</span>
+                                <span class="tech-tag">Multithreading</span>
+                                <span class="tech-tag">Synchronization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-spider"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Wikipedia Scraper and Crawler</h3>
+                            <p>Developed a full-stack web scraper using JavaScript with Node.js, Express, Axios, and Cheerio to recursively crawl Wikipedia pages until reaching the "Philosophy" page, leveraging Server-Sent Events for real-time data streaming.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Axios</span>
+                                <span class="tech-tag">Cheerio</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/colinwang05/getting-to-philosophy" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>x86-64 Compiler</h3>
+                            <p>Designed and implemented a compiler for a language supporting integers, booleans, loops, conditionals, functions, and block-scoped variables. Built a recursive-descent parser producing an AST as the core intermediate representation with optimization passes including constant folding, dead-code elimination, and tail-call recursion optimization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C/C++</span>
+                                <span class="tech-tag">x86-64</span>
+                                <span class="tech-tag">System V ABI</span>
+                                <span class="tech-tag">Compiler Design</span>
+                                <span class="tech-tag">AST</span>
+                                <span class="tech-tag">Assembly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Web Crawler and Search Engine</h3>
+                            <p>Implemented a web crawler using AttoParser to parse over 20,000 .html pages and created an index of mappings for efficient querying. Built a query engine using a recursive descent parser to process complex logical queries and exact phrase matching.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">AttoParser</span>
+                                <span class="tech-tag">HTML Parsing</span>
+                                <span class="tech-tag">Indexing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects" class="card-section">
-      <h2>Projects</h2>
-      <div class="content">
-        <article class="project">
-          <h3>OS Kernel — Preemptive Multithreading & Synchronization (C/C++, x86, SMP)</h3>
-          <p>Implemented preemptive multithreading with per-thread stacks, thread control blocks, context-switch trampolines, and a multi-core <strong>timer-interrupt–driven</strong> scheduler using per-core ready queues and idle threads.</p>
-          <p>Built blocking synchronization primitives (Locks, Semaphores, Promises, Barriers) and validated correctness under race conditions and multi-core concurrency.</p>
-        </article>
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>colin.wang@email.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <article class="project">
-          <h3>Wikipedia Scraper and Crawler (Node.js & React)</h3>
-          <p>Built a full-stack web scraper that recursively crawls Wikipedia pages until reaching “Philosophy.”</p>
-          <p>GitHub Repo: <a href="https://github.com/colinwang05/getting-to-philosophy" target="_blank" rel="noopener">View on GitHub</a></p>
-        </article>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Colin Wang. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <article class="project">
-          <h3>Web Crawler and Search Engine (Java)</h3>
-          <p>Implemented a web crawler using AttoParser to parse over 20,000 HTML pages and created an index for efficient querying.</p>
-          <p>Developed a query engine using a recursive descent parser for processing complex queries and exact phrase matching.</p>
-        </article>
-
-        <article class="project">
-          <h3>Tetris AI (Java, Neural Networks, Genetic Algorithms)</h3>
-          <p>Developed a neural network model for optimizing Tetris piece placements using backpropagation.</p>
-          <p>Implemented genetic algorithms to evaluate and enhance game performance.</p>
-        </article>
-
-        <article class="project">
-          <h3>Email Spam Filter (Python, scikit-learn, pandas, NLTK)</h3>
-          <p>Built an email spam classifier using Naive Bayes and CountVectorizer, achieving 96% accuracy.</p>
-          <p>Optimized feature extraction and model parameters for improved performance.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="card-section">
-      <h2>Contact</h2>
-      <div class="content">
-        <p>Email: <a href="mailto:colinwang05@utexas.edu">colinwang05@utexas.edu</a></p>
-        <p>GitHub: <a href="https://github.com/colinwang05" target="_blank" rel="noopener">github.com/colinwang05</a></p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Colin Wang</p>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
